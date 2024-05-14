@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/MyOwn/stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="cart.js"></script>
+    <script src="Data.js"></script>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark" aria-label="Third navbar example" style="height: 50px; background-color: black;">
+        <div class="container-fluid">
+          <img src="image/pngwing.com.png" alt="Wix Logo" height="30px">
+          <a class="navbar-brand" href="index.html">WIX</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Community</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Products</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/MyOwn/Contact.html">Contact Us</a></li>
+                  <li><a class="dropdown-item" href="/MyOwn/Learn More.html">About Us</a></li>
+                  <li><a class="dropdown-item" href="/MyOwn/Gallery.html">Gallery</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form role="search" style="height: auto; width: auto; padding: 0px;">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </form>
+
+                        <a href="Store Page.html">
+              <div id="cart" class="cart">
+                  <i class="bi bi-cart2">Cart</i>
+                  <div id="cartAmount" class="cartAmount">0</div>
+              </div>
+          </a>
+          </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-0 text-center bg-body-tertiary" id="multi">
+      <div class="col-md-6 p-lg-5 mx-auto my-5">
+        <img src="image/pngwing.com.png" alt="Wix Logo" style="height: 175px;">
+        <h1 class="display-3 fw-bold" id="first">Phones For Everybody</h1>
+        <h3 class="fw-normal mb-3" style="color: black;">Find What You Need</h3>
+        
+        <div class="d-flex gap-3 justify-content-center lead fw-normal">
+          </a>
+        </div>
+      </div>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+
+    
+    <div id="products">
+      <div class="row row-cols-1 row-cols-md-4 g-4" style="padding: 50px;">
+        <div class="col">
+          <div class="card">
+            <img src="image/apple-iphone-15-pro-max-2 (1).jpg" class="card-img-top" alt="Iphone 15 pro max" style="height: 320px;">
+            <div class="card-body">
+              <p class="card-title" style="font-size: 20px;">Iphone 15 Pro Max <br></p>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="price-quantity">
+                <p style="font-size: 30px;" id="item.price">€1500 </p>
+                <div class="product">
+                  <button class="rem" id="1" onclick="addToCart('Iphone 15 Pro Max',1500)"><img src="image/plus.png"></button>
+                  <button class="rem" id="1" onclick="removeFromCart('Iphone 15 Pro Max',1500)"><img src="image/minus.png"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="image/samsung-galaxy-s24-ultra-5g-sm-s928-2.jpg" class="card-img-top" alt="Samsung galaxy s24 Ultra" style="height: 325px;">
+            <div class="card-body">
+              <h5 class="card-title">Samsung Galaxy S24 Ultra</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="price-quantity">
+                <h2>€ 1500 </h2>
+                <div class="product">
+                  <button class="rem" id="2" onclick="addToCart('Samsung Galaxy S24 Ultra', 1500)"><img src="image/plus.png"></button>         
+                  <button class="rem" id="2" onclick="removeFromCart('Samsung Galaxy S24 Ultra', 1500)"><img src="image/minus.png"></button>                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="image/xiaomi-14-ultra-2.jpg" class="card-img-top" alt="Xiaomi 14 Ultra"style="height: 345px;">
+            <div class="card-body">
+              <h5 class="card-title">Xiaomi 14 Ultra</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <div class="price-quantity">
+                <h2>€ 1500 </h2>
+                <div class="product">
+                  <button class="rem" id="3" onclick="addToCart('Xiaomi 14 Ultra', 1500)"><img src="image/plus.png"></button>                
+                  <button class="rem" id="3" onclick="removeFromCart('Xiaomi 14 Ultra', 1500)"><img src="image/minus.png"></button>                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="image/samsung-galaxy-s23-ultra-5g-3.jpg" class="card-img-top" alt="Samsung galaxy s23 Ultra"style="height: 320px;">
+            <div class="card-body">
+              <h5 class="card-title">Samsung Galaxy S23 Ultra</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="price-quantity">
+                <h2>€ 1500 </h2>
+                <div class="product">
+                  <button class="rem" id="4" onclick="addToCart('Samsung Galaxy S23 Ultra', 1500)"><img src="image/plus.png"></button>  
+                  <button class="rem" id="4" onclick="removeFromCart('Samsung Galaxy S23 Ultra', 1500)"><img src="image/minus.png"></button>                              
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><div class="row row-cols-1 row-cols-md-4 g-4" style="padding: 50px;">
+        <div class="col">
+          <div class="card">
+            <img src="image/samsung-galaxy-a54-6.jpg" class="card-img-top" alt="Samsung Galaxy a54"style="height: 320px;">
+            <div class="card-body">
+              <h5 class="card-title">Samsung Galaxy A54</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="price-quantity">
+                <h2>€ 1500 </h2>
+                <div class="product">
+                  <button class="rem" id="5" onclick="addToCart('Samsung Galaxy A54', 1500)"><img src="image/plus.png"></button>
+                  <button class="rem" id="5" onclick="removeFromCart('Samsung Galaxy A54', 1500)"><img src="image/minus.png"></button>                               
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="image/xiaomi-13-pro-colors-1.jpg" class="card-img-top" alt="Xiaomi 13 pro"style="height: 321px;">
+            <div class="card-body">
+              <h5 class="card-title">Xiaomi 13 Pro</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="price-quantity">
+                <h2>€ 1500 </h2>
+                <div class="product">
+                  <button class="rem" id="6" onclick="addToCart('Xiaomi 13 Pro', 1500)"><img src="image/plus.png"></button>
+                  <button class="rem" id="6" onclick="removeFromCart('Xiaomi 13 Pro', 1500)"><img src="image/minus.png"></button>                                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="image/xiaomi-poco-f5-2.jpg" class="card-img-top" alt="Xiaomi poco f5"style="height: 343px;">
+            <div class="card-body">
+              <h5 class="card-title">Xiaomi Poco F5</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <div class="price-quantity">
+                <h2>€ 1500 </h2>
+                <div class="product">
+                  <button class="rem" id="7" onclick="addToCart('Xiaomi Poco F5', 1500)"><img src="image/plus.png"></button>
+                  <button class="rem" id="7" onclick="removeFromCart('Xiaomi Poco F5', 1500)"><img src="image/minus.png"></button>                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="image/google-pixel-8-pro-2.jpg" class="card-img-top" alt="Google pixel 8 pro"style="height: 320px;">
+            <div class="card-body">
+              <h5 class="card-title">Google Pixel 8 Pro</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="price-quantity">
+                <h2>€ 1500 </h2>
+                <div class="product">
+                  <button class="rem" id="8" onclick="addToCart('Google Pixel 8 Pro', 1500)"><img src="image/plus.png"></button>
+                  <button class="rem" id="8" onclick="removeFromCart('Google Pixel 8 Pro', 1500)"><img src="image/minus.png"></button>                                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-4 g-4" style="padding: 50px;">
+        <div class="col">
+          <div class="card">
+            <img src="image/xiaomi-redmi-turbo3-2.jpg" class="card-img-top" alt="Xiaomi redmi turbo 3"style="height: 320px;">
+            <div class="card-body">
+              <h5 class="card-title">Xiaomi Redmi Turbo 3</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="price-quantity">
+                <h2>€ 1500 </h2>
+                <div class="product">
+                  <button class="rem" id="9" onclick="addToCart('Xiaomi Redmi Turbo 3', 1500)"><img src="image/plus.png"></button>
+                  <button class="rem" id="9" onclick="removeFromCart('Xiaomi Redmi Turbo 3', 1500)"><img src="image/minus.png"></button>                               
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="image/samsung-galaxy-a35-2.jpg" class="card-img-top" alt="Samsung Galaxy A35"style="height: 320px;">
+            <div class="card-body">
+              <h5 class="card-title">Samsung Galaxy A35</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="price-quantity">
+                <h2>€ 1500 </h2>
+                <div class="product">
+                  <button class="rem" id="10" onclick="addToCart('Samsung Galaxy A35', 1500)"><img src="image/plus.png"></button>
+                  <button class="rem" id="10" onclick="removeFromCart('Samsung Galaxy A35', 1500)"><img src="image/minus.png"></button>                                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="image/asus-zenfone-11-ultra-5.jpg" class="card-img-top" alt="Asus zenfone 11 Ultra"style="height: 343px;">
+            <div class="card-body">
+              <h5 class="card-title">Asus Zenfone 11 Ultra</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <div class="price-quantity">
+                <h2>€ 1500 </h2>
+                <div class="product">
+                  <button class="rem" id="11" onclick="addToCart('Asus Zenfone 11 Ultra', 1500)"><img src="image/plus.png"></button>
+                  <button class="rem" id="11" onclick="removeFromCart('Asus Zenfone 11 Ultra', 1500)"><img src="image/minus.png"></button>                               
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="image/infinix-note-40-pro-5g-2.jpg" class="card-img-top" alt="Infinix Note 40 Pro 5G"style="height: 320px;">
+            <div class="card-body">
+              <h5 class="card-title">Infinix Note 40 Pro 5G</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="price-quantity">
+                <h2>€ 1500 </h2>
+                <div class="product">
+                  <button class="rem" id="12" onclick="addToCart('Infinix Note 40 Pro 5G', 1500)"><img src="image/plus.png"></button>
+                  <button class="rem" id="12" onclick="removeFromCart('Infinix Note 40 Pro 5G', 1500)"><img src="image/minus.png"></button>                                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><div class="row row-cols-1 row-cols-md-4 g-4" style="padding: 50px;">
+        <div class="col">
+          <div class="card">
+            <img src="image/apple-iphone-xr-4.jpg" class="card-img-top" alt="Apple Iphone XR"style="height: 320px;">
+            <div class="card-body">
+              <h5 class="card-title">Apple Iphone XR</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="price-quantity">
+                <h2>€ 1500 </h2>
+                <div class="product">
+                  <button class="rem" id="13" onclick="addToCart('Apple Iphone XR', 1500)"><img src="image/plus.png"></button>
+                  <button class="rem" id="13" onclick="removeFromCart('Apple Iphone XR', 1500)"><img src="image/minus.png"></button>                                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="image/xiaomi-poco-x6-pro-2.jpg" class="card-img-top" alt="Xiaomi Poco X6 Pro"style="height: 320px;">
+            <div class="card-body">
+              <h5 class="card-title">Xiaomi Poco X6 Pro</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="price-quantity">
+                <h2>€ 1500 </h2>
+                <div class="product">
+                  <button class="rem" id="14" onclick="addToCart('Xiaomi Poco X6 Pro', 1500)"><img src="image/plus.png"></button>
+                  <button class="rem" id="14" onclick="removeFromCart('Xiaomi Poco X6 Pro', 1500)"><img src="image/minus.png"></button>                                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="image/apple-iphone-12-2.jpg" class="card-img-top" alt="Apple Iphone 12"style="height: 343px;">
+            <div class="card-body">
+              <h5 class="card-title">Apple Iphone 12</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <div class="price-quantity">
+                <h2>€ 1500 </h2>
+                <div class="product">
+                  <button class="rem" id="15" onclick="addToCart('pple Iphone 12', 1500)"><img src="image/plus.png"></button>
+                  <button class="rem" id="15" onclick="removeFromCart('pple Iphone 12', 1500)"><img src="image/minus.png"></button>                                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="image/xiaomi-mi-9t-0.jpg" class="card-img-top" alt="Xiaomi mi 9t pro"style="height: 320px;">
+            <div class="card-body">
+              <h5 class="card-title">Xiaomi Mi 9t Pro</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="price-quantity">
+                <h2>€ 1500 </h2>
+                <div class="product">
+                  <button class="rem" id="16" onclick="addToCart('Xiaomi Mi 9t Pro', 1500)"><img src="image/plus.png"></button>
+                  <button class="rem" id="16" onclick="removeFromCart('Xiaomi Mi 9t Pro', 1500)"><img src="image/minus.png"></button>                                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+    <div class="bd-example m-0 border-0">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+        </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">© 2023 Company, Inc</p>
+    
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+    
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+        </ul>
+      </footer>
+  </body>
+</html>

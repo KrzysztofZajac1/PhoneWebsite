@@ -1,0 +1,141 @@
+html, body {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    }
+
+    #first {
+    margin: 0 0 20px;
+    font-weight: 400;
+    color: rgb(196, 127, 25);
+    }
+
+    #second {
+        margin: 0 0 20px;
+        font-weight: 400;
+        color: rgb(196, 127, 25);
+        }
+
+    p {
+    margin: 0 0 5px;
+    
+    }
+    #fp {
+        margin: 0 0 5px;
+        color: #666;
+         border-color: rgb(167, 108, 0);
+        }
+
+    #main-blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(158,158,158,1) 40%, rgba(94,94,94,1) 55%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(158,158,158,1) 40%, rgba(94,94,94,1) 55%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(158,158,158,1) 40%, rgba(94,94,94,1) 55%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
+    }
+
+    form {
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 0 2px 5px #f5f5f5; 
+    background: #f5f5f5; 
+    }
+
+    input, textarea {
+    width: calc(100% - 18px);
+    padding: 8px;
+    margin-bottom: 0px;
+    border: 1px solid rgb(196, 127, 25);
+    outline: none;
+    }
+
+    input::placeholder {
+    color: #666;
+    }
+
+    button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: rgb(196, 127, 25); 
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    }
+
+    button:hover {
+    background: #ff9900;
+    }    
+
+    #multi {
+        background: rgb(255,255,255);
+    background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(158,158,158,1) 40%, rgba(94,94,94,1) 55%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(158,158,158,1) 40%, rgba(94,94,94,1) 55%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(158,158,158,1) 40%, rgba(94,94,94,1) 55%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
+    }
+
+    .card {
+        background: none;
+        color:rgb(0, 0, 0) ;
+        border: none;
+    }
+    
+    p{
+        display: inline;
+        margin: 5px;
+    }
+
+    span {
+        font-size: 40px;
+        color: #666;
+        margin-left: 15%;
+    }
+
+    #dateTime {
+        font-size: 60px;
+        color: black;
+    }
+
+
+.cart {
+    position: relative;
+    background-color: #fff;
+    color: #212529;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    height: 40px;
+    top: -3px;
+}
+
+.cartAmount {
+    position: relative;
+    left: 20px;
+    top: -50px;
+    right: -20px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 10px;
+    height: 25px;
+    width: 16px;
+}
+
+.rem {
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    margin: auto;
+    padding: 2px;
+}
